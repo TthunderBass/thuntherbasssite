@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title> GALERIA </title>
+
+    <!-- link do estilo da pagina-->
+    <link rel="stylesheet" href="../styles/estilo.css">
+    <link rel="stylesheet" href="../styles/galeria.css">
+    <script src="https://kit.fontawesome.com/7422981fa0.js" crossorigin="anonymous"></script>
+
+    <!-- meta de responsividade-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fontes utilizadas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap" 
+    rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- icone da pagina -->
+    <link rel="icon" id="favicon" href="../images/logo_icon.png" type="image/x-icon">
+
+
+
+</head>
+
+<body>
+
+    <div id="Scrolllado"></div>
+    <div id="barraRolagem"></div>
+
+
+    <!-- menu da pagina (barra de cima) -->
+
+    <section id="header">
+
+        <a href="Index.html"> <img src="../images/thuntherbassIcon.png" id="logoheader" class="logo" alt="thunther bass logo"> </a>
+
+        <div>
+            <ul id="navbar">
+                <li> <i onclick="closeMenu()"  id="cross" class="fa-solid fa-circle-xmark"></i> </li>
+                <li> <a href="Index.html"> SOBRE </a> </li>
+                <li> <a href="eventos.html"> LOJA </a> </li>
+                <li> <a class="active" href="galeria.html"> GALERIA </a> </li>
+                <li> <a href="contato.html"> CONTATO </a> </li>
+                <li> <button  class="buttonheader" id="loginheader"><i id="butonaccount" class="fa-solid fa-circle-user  fa-bounce fa-xl iconlogin"></i></button> </li>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <button class="buttonheader" id="car"><i class="fa-solid fa-circle-user fa-bounce fa-xl"></i> </button>
+            <i onclick="getMenu()"  id="bar"class="fa-solid fa-bars"> </i>
+        </div>
+
+    </section>
+
+    <!-- carroussel de imagens da pagina -->
+    <div class="slider">
+        <div class="slides">
+            <!-- radio buttons -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+            <!-- slide das imagens -->
+            <div class="slide first">
+                <img src="../images/carrouselimg/carrossel2.gif" alt="imagem carrosel 1"/>
+            </div>
+
+            <div class="slide">
+                <img src="../images/carrouselimg/carrossel2_2.png" alt="imagem carrosel 2"/>
+            </div>
+            <div class="slide">
+                <img src="../images/carrouselimg/carrossel2_3.png" alt="imagem carrosel 3"/>
+            </div>
+
+            <!-- bolinhas de navegação -->
+            <div class="navigation-auto">
+                <div class="auto-btn1">
+                </div>
+                <div class="auto-btn2">
+                </div>
+                <div class="auto-btn3">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+
+    </div>
+
+
+
+    <!-- conteudo da pagina -->
+    <div id="titulos">
+
+        <h2 id="h2home">FOTOS DO EVENTO </h2> 
+        <h1 id="h1home"> MAIS BASS DO ABC</h1> 
+
+        <h3>
+            Aqui está algumas fotos de como o evento foi melhorando aos poucos!<br>
+            <span class="textmark">Que a Cultura do bass floresça mais a cada dia! </span> <br> <br>
+
+        </h3>
+
+        <div class="galeriadiv">
+            <img class="imagemgaleria" src="../images/galeria/1.png" alt="imagem do evento">  <br>
+            <h3 class="textogaleria">
+                ⚡️E pensar que o evento teria seus primeiros passos aqui! 
+                Depois de um grande evento online na twitch, crescer 
+                pequenino com poucas pessoas, mas uma grande energia!<br>
+                🤩Até hoje para pra reparar no carinho de como foi feita a decoração,
+                 os visuais na tv e no monitor pra dar um boost na resenha.<br>
+            </h3>
+        </div>
+
+        <div class="galeriadiv">
+            <h3 class="textogaleria">
+                ⛩️Hoje percebo que evoluiram os tempos, o espaço, o trabalho, equipamentos, 
+                tudo! Mas por hora vamos relembrar os bons momentos antes de chegar nessa 
+                festa do presente que será anunciada em breve!!<br>
+                🔥Aqui está algumas imagens da pulseira do evento em que fora realizada para comemorar
+                o primeiro festival presencial e tematico para poucas pessoas em questão.
+            </h3>  <br>
+            <img class="imagemgaleria" src="../images/galeria/2.png" alt="imagem do evento">
+        </div>
+
+        <div class="galeriadiv">
+            <img class="imagemgaleria" src="../images/galeria/3.gif" alt="imagem do evento"> <br>
+            <h3 class="textogaleria">
+                ⚡️ Assim como todo projeto que é feito com carinho e dedicação, a thunderbass
+                pode escalar seu tamanho em questão de espaço.<br>
+                👀Equipamentos de luzes, fumaças e lasers foram adquiridos para a melhor 
+                experiência de bass possivel para o evento rolar!<br>
+                🤘🏽 os videos são curtos por ter sido algo mais entre amigos e colegas, 
+                afim de testar os equipamentos, mas ja da pra ter uma base do que mudamos ao longo dos anos!!
+            </h3>
+        </div>
+
+    </div>
+
+    </div>
+
+    <div id="divimgfinal">
+        <img src="../images/features/gifpixelart2.gif" class="imgfinalpag" alt="logo ttams">
+    </div>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="../images/ttamsIcon.png" class="logo" alt="logo ttams"> 
+            <h3> <strong> <span class="textmark">Keep calm & Feel the Bass </span> </strong></h3>
+            <p> <strong> Telefone: </strong> +55 (11) 93082-0738 </p>
+
+            <div  class="follow">
+                <div class="icon">
+                    <a href="https://www.tiktok.com/@thunderbass14?_t=8WISJFp29rC&_r=1" target="_blank"><i class="fa-brands fa-tiktok" id="icone1"></i> </a>
+                    <a href="https://www.instagram.com/thunderbassfest/" target="_blank"> <i class="fa-brands fa-instagram" id="icone2"> </i> </a>
+                    <a href="https://www.youtube.com/channel/UCGWp1s2s_ETVpxKKTVEqvZw" target="_blank"><i class="fa-brands fa-youtube" id="icone3"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p> © Copyright @ 2022 By THUNDER BASS FEST ™</p>
+        </div>
+
+
+    </footer>
+
+    <script src="../javascripts/barraRolagem.js"></script>
+    <script src="../javascripts/script.js"></script>
+    <script src="../javascripts/carrousel.js"></script>
+    <script type="module" src="../javascripts/logincheck.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title> CONTATO </title>
+
+    <!-- link do estilo da pagina-->
+    <link rel="stylesheet" href="../styles/estilo.css">
+    <link rel="stylesheet" href="../styles/estilocontato.css">
+
+    <!-- meta de responsividade-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/7422981fa0.js" crossorigin="anonymous"></script>
+
+    <!-- Fontes utilizadas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap" 
+    rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- icone da pagina -->
+    <link rel="icon" id="favicon" href="../images/logo_icon.png" type="image/x-icon">
+
+
+
+</head>
+
+<body>
+    
+    <!-- conteudo da pagina -->
+
+    <div class="container">
+      <span class="big-circle"></span>
+      <div class="form">
+        <div class="contact-info">
+          <div class="navbarcontact">
+              <a href="Index.html"> SOBRE </a>
+              <a href="eventos.html"> EVENTOS </a>
+              <a href="galeria.html"> GALERIA </a>
+              <a class="active" href="contato.html"> CONTATO </a>
+          </div>
+          <h3 class="title" id="titulobgpreto">Entre em Contato Com a Gente!</h3>
+          <p class="text">
+            Hi headbangers!! <br>
+            Gostou do que viu e precisa entrar em contato conosco?
+            teve problemas ou não conseguiu achar o que precisava?
+            fique a vontade para nos contactar!!
+            Que a força do bass esteja conosco!! #riddimgangbr.
+            
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <i class="fa-solid fa-map-location-dot icon"></i>
+              <p>Av. João Firmino, 1520 - Assunção, SBC-SP</p>
+            </div>
+            <div class="information">
+              <i class="fa-solid fa-envelope-circle-check icon"></i>
+              <p>thunderbassfest@gmail.com</p>
+            </div>
+            <div class="information">
+              <i class="fa-solid fa-square-phone icon"></i>
+              <p>+55 (11) 93082-0738</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p id="contatotext">Entre em contato conosco:</p>
+            <div class="social-icons">
+              <a href="https://twitter.com/TMadrugando"><i class="fa-brands fa-tiktok" id="icone1"></i> </a>
+              <a href="https://www.instagram.com/guikimport/"> <i class="fa-brands fa-instagram" id="icone2"> </i> </a>
+              <a href="https://www.youtube.com/channel/UCGWp1s2s_ETVpxKKTVEqvZw"><i class="fa-brands fa-youtube" id="icone3"></i></a>     
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" id="nome"/>
+              <label for="">Nome</label>
+              <span class="spanform">Nome</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" id="email" />
+              <label for="">Email</label>
+              <span class="spanform">Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" id="telefone"/>
+              <label for="">Telefone</label>
+              <span class="spanform">Telefone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input" id="mensagem"></textarea>
+              <label for="">Mensagem</label>
+              <span class="spanform">Mensagem</span>
+            </div>
+            <div id="btn">
+              <input value="Enviar" class="btn" onclick="enviar()"/>
+            </div>
+            <div id="logo">
+              <a href="Index.html"> <img src="../images/thuntherbassIcon.png" class="logo" alt="thunther bass logo"> </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <script src="../javascripts/script.js"></script>
+    <script src="../javascripts/contato.js"></script>
+    <script type="module" src="../javascripts/contatoforms.js"></script>
+</body>
+</html>

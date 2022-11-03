@@ -1,0 +1,688 @@
+
+
+*{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.15rem;
+
+    --cor-bg: #F9F7F7;
+    --cor-links: #FFB000 ;
+    --cor-text: #171717;
+    --cor-marker: #171717;
+    --cor-hover: #AF1818;
+
+}
+
+/* estilização compras promoção*/
+
+#h2home{
+    margin-top: 2rem;
+}
+
+#Promos{
+    text-align: center;
+}
+#centralizador{
+    display: flex;
+    align-items: center;
+}
+
+.pro-container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#Promos .pro-container{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    gap: 6rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    transition: 1s ease-in-out;
+    
+}
+
+#Promos .pro{
+    width: 15%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 4px solid var(--cor-text);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px var(--cor-text);
+    margin: 15px 0;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    transition: 1s ease-in-out;
+}
+
+#Promos .pro:hover{
+    box-shadow: 10px 10px 20px var(--cor-hover);
+}
+
+#Promos .pro img{
+    width: 60%;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+#Promos .pro img:hover{
+    width: 70%;
+    border-radius: 25px;
+}
+
+#Promos .pro .des{
+    padding: 10px 0;
+}
+
+#Promos .pro .des span{
+    color: var(--cor-hover);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+#Promos .pro .des h5{
+    padding-top: 7px;
+    color: var(--cor-text);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#Promos .pro .des .estrelinha{
+
+    font-size: 12px;
+    color: var(--cor-hover);
+}
+
+#Promos .pro .des h4{
+    padding-top: 7px;
+    color: var(--cor-text);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#Promos .pro .cart{
+    width: 55px;
+    height: 15px;
+    line-height: 15px;
+    border-radius: 40px;
+    background-color: var(--cor-hover);
+    padding: 5px;
+    margin-top: 10px;
+    color: var(--cor-text);
+    border: 3px solid var(--cor-text);
+    transition: 0.5s ease-in-out;
+}
+
+#Promos .pro .cart:hover{
+    width: 60px;
+    height: 15px;
+    line-height: 15px;
+    border-radius: 40px;
+    background-color: var(--cor-hover);
+    padding: 8px;
+    color: var(--cor-links);
+    border: 3px solid var(--cor-text);
+}
+
+
+/* desktop */
+@media (max-width:1440px){
+    #Promos .pro .des span {
+        font-size: 26px;
+        font-weight: 800;
+    }
+
+    #Promos .pro .des h5 {
+        padding-top: 7px;
+        color: var(--cor-text);
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    #Promos .pro .des h4 {
+        padding-top: 7px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    #Promos .pro {
+        width: 5%;
+        min-width: 290px;
+        padding: 20px 20px;
+        border: 4px solid var(--cor-text);
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 10px 10px 10px var(--cor-text);
+        margin: 15px 0;
+        margin-left: 20px;
+        transition: 1s ease-in-out;
+    }
+
+    #Promos .pro img {
+        width: 70%;
+        border-radius: 20px;
+        transition: 0.5s ease-in-out;
+    }
+
+    #Promos .pro img:hover{
+        width: 90%;
+        border-radius: 25px;
+    }
+
+    #Promos .pro .cart{
+        width: 75px;
+        height: 15px;
+        line-height: 15px;
+        border-radius: 40px;
+        background-color: var(--cor-hover);
+        padding: 6px;
+        margin-top: -20px;
+        color: var(--cor-text);
+        border: 3px solid var(--cor-text);
+        transition: 0.5s ease-in-out;
+    }
+    
+    #Promos .pro .cart:hover{
+        width: 80px;
+        height: 18px;
+        line-height: 15px;
+        border-radius: 40px;
+        background-color: var(--cor-hover);
+        padding: 9px;
+        color: var(--cor-links);
+        border: 3px solid var(--cor-text);
+    }
+
+    #gifevento {
+        width: 25rem;
+    } 
+}
+
+/* laptop */
+@media (max-width:1024px){
+
+    #Promos .pro-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        margin-left: 1rem;
+        gap: 2rem;
+    }
+    #Promos .pro {
+        width: 5%;
+        min-width: 250px;
+        padding: 20px 20px;
+        border: 4px solid var(--cor-text);
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 10px 10px 10px var(--cor-text);
+        margin: 15px 0;
+        margin-left: 5px;
+        transition: 1s ease-in-out;
+    }
+    #Promos .pro .des span {
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    #Promos .pro .des h5 {
+        padding-top: 7px;
+        color: var(--cor-text);
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    #Promos .pro .des h4 {
+        padding-top: 7px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    #Promos .pro img {
+        width: 60%;
+        border-radius: 20px;
+        transition: 0.5s ease-in-out;
+    }
+
+    #Promos .pro img:hover{
+        width: 80%;
+        border-radius: 25px;
+    }
+
+    #Promos .pro .cart{
+        width: 65px;
+        height: 15px;
+        line-height: 15px;
+        border-radius: 40px;
+        background-color: var(--cor-hover);
+        padding: 6px;
+        margin-top: -20px;
+        color: var(--cor-text);
+        border: 3px solid var(--cor-text);
+        transition: 0.5s ease-in-out;
+    }
+    
+    #Promos .pro .cart:hover{
+        width: 75px;
+        height: 25px;
+        line-height: 15px;
+        border-radius: 40px;
+        background-color: var(--cor-hover);
+        padding: 9px;
+        color: var(--cor-links);
+        border: 3px solid var(--cor-text);
+    }
+
+    #gifevento {
+        width: 15rem;
+    } 
+}
+
+/* tablet */
+@media (max-width:768px){
+
+
+    #Promos .pro-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        margin-left: -0.3rem;
+        gap: 2rem;
+    }
+
+    #Promos .pro .des span {
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    #Promos .pro .des h5 {
+        padding-top: 7px;
+        color: var(--cor-text);
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    #Promos .pro .des h4 {
+        padding-top: 7px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    #Promos .pro {
+        width: 5%;
+        min-width: 250px;
+        padding: 20px 20px;
+        border: 4px solid var(--cor-text);
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 10px 10px 10px var(--cor-text);
+        margin: 15px 0;
+        margin-left: 20px;
+        transition: 1s ease-in-out;
+    }
+
+    #Promos .pro img {
+        width: 60%;
+        border-radius: 20px;
+        transition: 0.5s ease-in-out;
+    }
+
+    #Promos .pro img:hover{
+        width: 80%;
+        border-radius: 25px;
+    }
+
+    #Promos .pro .cart{
+        width: 65px;
+        height: 15px;
+        line-height: 15px;
+        border-radius: 40px;
+        background-color: var(--cor-hover);
+        padding: 6px;
+        margin-top: -20px;
+        color: var(--cor-text);
+        border: 3px solid var(--cor-text);
+        transition: 0.5s ease-in-out;
+    }
+    
+    #Promos .pro .cart:hover{
+        width: 75px;
+        height: 25px;
+        line-height: 15px;
+        border-radius: 40px;
+        background-color: var(--cor-hover);
+        padding: 9px;
+        color: var(--cor-links);
+        border: 3px solid var(--cor-text);
+    }
+
+    #gifevento {
+        width: 15rem;
+    } 
+}
+
+/* mobile big */
+@media (max-width:767px){
+
+    #Promos .pro-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        margin-left: 3.5rem;
+        gap: 2rem;
+    }
+
+    #Promos .pro .des span {
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    #Promos .pro .des h5 {
+        padding-top: 7px;
+        color: var(--cor-text);
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    #Promos .pro .des h4 {
+        padding-top: 7px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    #Promos .pro {
+        width: 5%;
+        min-width: 250px;
+        padding: 20px 20px;
+        border: 4px solid var(--cor-text);
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 10px 10px 10px var(--cor-text);
+        margin: 15px 0;
+        transition: 1s ease-in-out;
+    }
+
+    #Promos .pro img {
+        width: 60%;
+        border-radius: 20px;
+        transition: 0.5s ease-in-out;
+    }
+
+    #Promos .pro img:hover{
+        width: 80%;
+        border-radius: 25px;
+    }
+
+    #Promos .pro .cart{
+        width: 65px;
+        height: 15px;
+        line-height: 15px;
+        border-radius: 40px;
+        background-color: var(--cor-hover);
+        padding: 6px;
+        margin-top: -20px;
+        color: var(--cor-text);
+        border: 3px solid var(--cor-text);
+        transition: 0.5s ease-in-out;
+    }
+    
+    #Promos .pro .cart:hover{
+        width: 75px;
+        height: 25px;
+        line-height: 15px;
+        border-radius: 40px;
+        background-color: var(--cor-hover);
+        padding: 9px;
+        color: var(--cor-links);
+        border: 3px solid var(--cor-text);
+    }
+
+    #gifevento {
+        width: 15rem;
+    }
+}
+
+/* mobile medium */
+@media (max-width:375px){
+
+    #Promos .pro-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        margin-left: 1.9rem;
+        gap: 2rem;
+    }
+
+    #Promos .pro .des span {
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    #Promos .pro .des h5 {
+        padding-top: 7px;
+        color: var(--cor-text);
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    #Promos .pro .des h4 {
+        padding-top: 7px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    #Promos .pro {
+        width: 5%;
+        min-width: 250px;
+        padding: 20px 20px;
+        border: 4px solid var(--cor-text);
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 10px 10px 10px var(--cor-text);
+        margin: 15px 0;
+        transition: 1s ease-in-out;
+    }
+
+    #Promos .pro img {
+        width: 60%;
+        border-radius: 20px;
+        transition: 0.5s ease-in-out;
+    }
+
+    #Promos .pro img:hover{
+        width: 80%;
+        border-radius: 25px;
+    }
+
+    #Promos .pro .cart{
+        width: 65px;
+        height: 15px;
+        line-height: 15px;
+        border-radius: 40px;
+        background-color: var(--cor-hover);
+        padding: 6px;
+        margin-top: -20px;
+        color: var(--cor-text);
+        border: 3px solid var(--cor-text);
+        transition: 0.5s ease-in-out;
+    }
+    
+    #Promos .pro .cart:hover{
+        width: 75px;
+        height: 25px;
+        line-height: 15px;
+        border-radius: 40px;
+        background-color: var(--cor-hover);
+        padding: 9px;
+        color: var(--cor-links);
+        border: 3px solid var(--cor-text);
+    }
+
+    #gifevento {
+        width: 15rem;
+    }
+}
+
+/* mobile litle */
+@media (max-width:320px){
+
+    #Promos .pro-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        margin-left: 0.1rem;
+        gap: 2rem;
+    }
+
+    #Promos .pro .des span {
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    #Promos .pro .des h5 {
+        padding-top: 7px;
+        color: var(--cor-text);
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    #Promos .pro .des h4 {
+        padding-top: 7px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    #Promos .pro {
+        width: 5%;
+        min-width: 250px;
+        padding: 20px 20px;
+        border: 4px solid var(--cor-text);
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 10px 10px 10px var(--cor-text);
+        margin: 15px 0;
+        transition: 1s ease-in-out;
+    }
+
+    #Promos .pro img {
+        width: 60%;
+        border-radius: 20px;
+        transition: 0.5s ease-in-out;
+    }
+
+    #Promos .pro img:hover{
+        width: 80%;
+        border-radius: 25px;
+    }
+
+    #Promos .pro .cart{
+        width: 65px;
+        height: 15px;
+        line-height: 15px;
+        border-radius: 40px;
+        background-color: var(--cor-hover);
+        padding: 6px;
+        margin-top: -20px;
+        color: var(--cor-text);
+        border: 3px solid var(--cor-text);
+        transition: 0.5s ease-in-out;
+    }
+    
+    #Promos .pro .cart:hover{
+        width: 75px;
+        height: 25px;
+        line-height: 15px;
+        border-radius: 40px;
+        background-color: var(--cor-hover);
+        padding: 9px;
+        color: var(--cor-links);
+        border: 3px solid var(--cor-text);
+    }
+
+    #gifevento {
+        width: 15rem;
+    }
+}
+
+/* mobile litle zflip */
+@media (max-width:280px){
+
+    #Promos .pro-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        margin-left: 1rem;
+        gap: 2rem;
+    }
+
+    #Promos .pro .des span {
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    #Promos .pro .des h5 {
+        padding-top: 7px;
+        color: var(--cor-text);
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    #Promos .pro .des h4 {
+        padding-top: 7px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    #Promos .pro {
+        width: 5%;
+        min-width: 200px;
+        padding: 20px 20px;
+        border: 4px solid var(--cor-text);
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 10px 10px 10px var(--cor-text);
+        margin: 15px 0;
+        transition: 1s ease-in-out;
+    }
+
+    #Promos .pro img {
+        width: 60%;
+        border-radius: 20px;
+        transition: 0.5s ease-in-out;
+    }
+
+    #Promos .pro img:hover{
+        width: 80%;
+        border-radius: 25px;
+    }
+
+    #Promos .pro .cart{
+        width: 65px;
+        height: 15px;
+        line-height: 15px;
+        border-radius: 40px;
+        background-color: var(--cor-hover);
+        padding: 6px;
+        margin-top: -20px;
+        color: var(--cor-text);
+        border: 3px solid var(--cor-text);
+        transition: 0.5s ease-in-out;
+    }
+    
+    #Promos .pro .cart:hover{
+        width: 75px;
+        height: 25px;
+        line-height: 15px;
+        border-radius: 40px;
+        background-color: var(--cor-hover);
+        padding: 9px;
+        color: var(--cor-links);
+        border: 3px solid var(--cor-text);
+    }
+
+    #gifevento {
+        width: 11rem;
+    }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title> PRODUTO </title>
+
+    <!-- link do estilo da pagina-->
+    <link rel="stylesheet" href="../styles/estilo.css">
+    <link rel="stylesheet" href="../styles/estiloPagCompra.css">
+    <script src="https://kit.fontawesome.com/7422981fa0.js" crossorigin="anonymous"></script>
+
+    <!-- meta de responsividade-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fontes utilizadas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap" 
+    rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- icone da pagina -->
+    <link rel="icon" id="favicon" href="../images/logo_icon.png" type="image/x-icon">
+
+
+
+</head>
+
+<body>
+
+    <div id="Scrolllado"></div>
+    <div id="barraRolagem"></div>
+
+
+    <!-- menu da pagina (barra de cima) -->
+
+    <section id="header">
+
+        <a href="Index.html"> <img src="../images/thuntherbassIcon.png" id="logoheader" class="logo" alt="thunther bass logo"> </a>
+
+        <div>
+            <ul id="navbar">
+                <li> <i onclick="closeMenu()"  id="cross" class="fa-solid fa-circle-xmark"></i> </li>
+                <li> <a href="Index.html"> SOBRE </a> </li>
+                <li> <a href="eventos.html"> LOJA </a> </li>
+                <li> <a href="galeria.html"> GALERIA </a> </li>
+                <li> <a href="contato.html"> CONTATO </a> </li>
+                <li> <button  class="buttonheader" id="loginheader"><i id="butonaccount" class="fa-solid fa-circle-user  fa-bounce fa-xl iconlogin"></i></button> </li>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <button id="car"><i class="fa-solid fa-circle-user fa-bounce fa-xl buttonheader"></i> </button>
+            <i onclick="getMenu()"  id="bar"class="fa-solid fa-bars"> </i>
+        </div>
+
+    </section>
+
+    <!-- conteudo da pagina -->
+    <section id="Promos" class="section-p1">
+
+        <div id="conteudopagcompra">
+
+        </div>
+
+        <div>
+            <h1 class="tituloCompra">IMAGENS</h1>
+        </div>
+
+        <div id="conteudo_principal">
+
+            <div class="pro-container" id="imagens">
+                <div id="imagemprincipal">
+                </div>
+
+                <div id="imagemABC">
+                </div>
+
+                <div>
+                    <h1 class="tituloCompra">FORMULARIO DE COMPRA</h1>
+                </div>
+
+                <div id="qrcode">
+
+                    <h4 id="formularioh4">
+                        Por gentileza, escreva o nome do proprietario da conta que irá realizar a transação!<br>
+                        Obs.: Não escrever ou escrever errado terá como resultado a recusa da compra e o extorno do valor em 7 dias úteis.
+                    </h4>
+                    <input  class="input" id="nomeContaPix" type="text"><br>
+                    
+                    <div id="codigoQR">
+                    
+                    </div>
+
+                    <h6 id="mensagemcopiaQR">
+                        clique Na imagem do código para copiar a 
+                        <span class="textmark"> chave aleatória</span><br>
+                    </h6>
+
+                </div>
+
+                <div id="buttonconfirmacompra">
+
+                    <h6 id="termo">
+                        Ao clicar no botão abaixo <span class="textmark">você confirma o pagamento da compra</span>.
+                        Após o débito do pagamento, você condorda com os termos de vendas 
+                        do site, <span class="textmark">não sendo passivel de devoluções e extorno de valores</span>,
+                        exceto em casos em que a thunderbass tenha responsabilidade do erro.  
+                    </h6>
+                    <button id="botaoCompra">
+                        <i class="fa-solid fa-bolt"></i>
+                    </button>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="../images/ttamsIcon.png" class="logo" alt="logo ttams"> 
+            <h3> <strong> <span class="textmark">Keep calm & Feel the Bass </span> </strong></h3>
+            <p> <strong> Telefone: </strong> +55 (11) 93082-0738 </p>
+
+            <div  class="follow">
+                <div class="icon">
+                    <a href="https://www.tiktok.com/@thunderbass14?_t=8WISJFp29rC&_r=1" target="_blank"><i class="fa-brands fa-tiktok" id="icone1"></i> </a>
+                    <a href="https://www.instagram.com/thunderbassfest/" target="_blank"> <i class="fa-brands fa-instagram" id="icone2"> </i> </a>
+                    <a href="https://www.youtube.com/channel/UCGWp1s2s_ETVpxKKTVEqvZw" target="_blank"><i class="fa-brands fa-youtube" id="icone3"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p> © Copyright @ 2022 By THUNDER BASS FEST ™</p>
+        </div>
+
+
+    </footer>
+
+
+    <script src="../javascripts/script.js"></script>
+    <script src="../javascripts/barraRolagem.js"></script>
+
+    <!-- Banco de dados firestore -->
+    <script type="module" src="../javascripts/compraPag.js"></script>
+    <script type="module" src="../javascripts/logincheck.js"></script>
+    <script src="../javascripts/mudaimg.js"></script>
+    
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title> THUNDER BASS FEST </title>
+
+    <!-- link do estilo da pagina-->
+    <link rel="stylesheet" href="../styles/estilo.css">
+    <script src="https://kit.fontawesome.com/7422981fa0.js" crossorigin="anonymous"></script>
+
+    <!-- meta de responsividade-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fontes utilizadas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap" 
+    rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- icone da pagina -->
+    <link rel="icon" id="favicon" href="../images/logo_icon.png" type="image/x-icon">
+
+
+
+</head>
+
+<body>
+
+    <div id="Scrolllado"></div>
+    <div id="barraRolagem"></div>
+
+
+    <!-- menu da pagina (barra de cima) -->
+
+    <section id="header">
+
+        <a href="Index.html"> <img src="../images/thuntherbassIcon.png" id="logoheader" class="logo" alt="thunther bass logo"> </a>
+
+        <div>
+            <ul id="navbar">
+                <li> <i onclick="closeMenu()"  id="cross" class="fa-solid fa-circle-xmark"></i> </li>
+                <li> <a class="active" href="Index.html"> SOBRE </a> </li>
+                <li> <a href="eventos.html"> LOJA </a> </li>
+                <li> <a href="galeria.html"> GALERIA </a> </li>
+                <li> <a href="contato.html"> CONTATO </a> </li>
+                <li> <button  class="buttonheader" id="loginheader"><i id="butonaccount" class="fa-solid fa-circle-user  fa-bounce fa-xl iconlogin"></i></button> </li>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <button id="car"><i class="fa-solid fa-circle-user fa-bounce fa-xl buttonheader"></i> </button>
+            <i onclick="getMenu()"  id="bar"class="fa-solid fa-bars"> </i>
+        </div>
+
+    </section>
+
+    <!-- carroussel de imagens da pagina -->
+    <div class="slider">
+        <div class="slides">
+            <!-- radio buttons -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+            <!-- slide das imagens -->
+            <div class="slide first">
+                <img src="../images/carrouselimg/carrossel1.gif" alt="imagem carrosel 1"/>
+            </div>
+
+            <div class="slide">
+                <img src="../images/carrouselimg/carrossel1_2.png" alt="imagem carrosel 2"/>
+            </div>
+            <div class="slide">
+                <img src="../images/carrouselimg/carrossel1_3.png" alt="imagem carrosel 3"/>
+            </div>
+
+            <!-- bolinhas de navegação -->
+            <div class="navigation-auto">
+                <div class="auto-btn1">
+                </div>
+                <div class="auto-btn2">
+                </div>
+                <div class="auto-btn3">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+
+    </div>
+
+
+
+    <!-- conteudo da pagina -->
+    <div id="titulos">
+
+        <h2 id="h2home">O QUE É A </h2> 
+        <h1 id="h1home"> THUNDER BASS??</h1>
+
+        <h3>
+            por algum acaso você ja sentiu aquele arrepio escutando o set do seu dj favorito?<br><br>
+            Ou ficava vidrado nos eventos que aconteciam na gringa e pensava o quão louco seria 
+            ouvir esse bass em alto e bom tom?<br><br>
+            Se a resposta for Sim para qualquer uma dessas perguntas,
+            <span class="textmark">esse evento é o que você procura!! </span> <br> <br>
+            Assim como você, eu ja senti muito isso... e um grande problema que vejo na 
+            comunidade de Bass music no brasil hoje em dia é justamente o fato de conter poucos 
+            eventos com uma grande quantidade de ouvintes nas redes sociais, e é justamente 
+            essa falta de visão que temos da grande mídia, seja apagando ou até mesmo 
+            ocultando alguns eventos bem desenvolvidos e criados com tanto carinho, 
+            que a comunidade se mantém nichado até os dias de hoje.
+        </h3>
+        <h3>Se você curte Riddim , Tear out dubstep , Drum and bass e aquele Color Bass de respeito, com o grave certo que rebate na alma...<br><br>
+            Bom, aqui é seu lugar!<br>
+            Seja bem vindo a cena <span class="textmark">#riddimgangbr</span><br></h3>
+        <h3> Para ver nossos Eventos ou acessar nossa Loja, basta clicar <a href="eventos.html" id="links"> aqui </a> 
+            ou acessar na aba EVENTOS ai em cima no menu!
+        </h3>
+
+    </div>
+
+    <div id="titulos">
+
+        <h2 id="h2home">ORIGEM DO </h2> 
+        <h1 id="h1home"> EVENTO</h1> 
+
+        <h3>
+            Assim como todo projeto, a thunderbass começou bem pequena,
+             começando no meio da pandemia tendo seu primeiro evento online realizado ao vivo na twitch, no dia 17 de Dezembro de 2021.<br><br>
+            Por menor que tenha sido a transmissão, pude contar com a ajuda de apoiadores como 2 gravadoras,
+             twitch prime e djs da américa do norte para desenvolver
+             <span class="textmark">um line up insano, para todos os gostos. </span> <br> <br>
+            Infelizmente, a gravação desse evento fora perdida, porém o trailer, adjunto com o marketing do evento ainda estão guardados com todo o carinho!!
+        </h3>
+
+        <div class="map">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/raafej5xbRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe"></iframe>
+        </div>
+
+
+        <h3>
+            Depois disso um evento pequeno presencial foi realizado afim de divulgar o volume 4 de mixagem nomeado como <span class="textmark">TTAMS mix vol4</span> <br> <br>
+        </h3>
+
+        <div class="map">
+            <iframe class="iframe" width="80%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1311549547&color=%23af1818&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        </div>
+
+        <h3>
+            Os videos do Evento podem ser visto na aba Galeria disponível no menu ai em cima! ou se quiser clique <span class="textmark"><a href="galeria.html" id="links">AQUI</a></span><br><br>
+        </h3>
+        
+    </div>
+
+    <div id="divimgfinal">
+        <img src="../images/features/gifpixelartbaphomet.gif" class="imgfinalpag" alt="logo ttams">
+    </div>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="../images/ttamsIcon.png" class="logo" alt="logo ttams"> 
+            <h3> <strong> <span class="textmark">Keep calm & Feel the Bass </span> </strong></h3>
+            <p> <strong> Telefone: </strong> +55 (11) 93082-0738 </p>
+
+            <div  class="follow">
+                <div class="icon">
+                    <a href="https://www.tiktok.com/@thunderbass14?_t=8WISJFp29rC&_r=1" target="_blank"><i class="fa-brands fa-tiktok" id="icone1"></i> </a>
+                    <a href="https://www.instagram.com/thunderbassfest/" target="_blank"> <i class="fa-brands fa-instagram" id="icone2"> </i> </a>
+                    <a href="https://www.youtube.com/channel/UCGWp1s2s_ETVpxKKTVEqvZw" target="_blank"><i class="fa-brands fa-youtube" id="icone3"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p> © Copyright @ 2022 By THUNDER BASS FEST ™</p>
+        </div>
+
+
+    </footer>
+
+    <script src="../javascripts/barraRolagem.js"></script>
+    <script src="../javascripts/script.js"></script>
+    <script src="../javascripts/carrousel.js"></script>
+    <script type="module" src="../javascripts/logincheck.js"></script>
+</body>
+
+</html>

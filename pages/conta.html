@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title> CONTA PESSOAL</title>
+
+    <!-- link do estilo da pagina-->
+    <link rel="stylesheet" href="../styles/estilo.css">
+    <link rel="stylesheet" href="../styles/estiloconta.css">
+    <script src="https://kit.fontawesome.com/7422981fa0.js" crossorigin="anonymous"></script>
+
+    <!-- meta de responsividade-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fontes utilizadas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap" 
+    rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- icone da pagina -->
+    <link rel="icon" id="favicon" href="../images/logo_icon.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <div id="Scrolllado"></div>
+    <div id="barraRolagem"></div>
+
+
+    <!-- menu da pagina (barra de cima) -->
+
+
+    <section id="header">
+
+        <a href="Index.html"> <img src="../images/thuntherbassIcon.png" id="logoheader" class="logo" alt="thunther bass logo"> </a>
+
+        <div>
+            <ul id="navbar">
+                <li> <i onclick="closeMenu()"  id="cross" class="fa-solid fa-circle-xmark"></i> </li>
+                <li> <a href="Index.html"> SOBRE </a> </li>
+                <li> <a href="eventos.html"> LOJA</a> </li>
+                <li> <a href="galeria.html"> GALERIA </a> </li>
+                <li> <a href="contato.html"> CONTATO </a> </li>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <button   class="buttonheader" id="logginbuutton" onclick="deslogar()">Deslogar</button>
+            <i onclick="getMenu()"  id="bar"class="fa-solid fa-bars barrinha"> </i>
+        </div>
+
+    </section>
+
+    <!-- conteudo da pagina -->
+    <div id="titulos">
+
+        <h2 id="h2home">SEJA BEM-VINDO </h2> 
+        <h1 id="h1home"></h1><br><br>
+
+    </div>
+
+    <div>
+
+        <h3 class="descprodh4h3"> Produtos Aprovados </h3>
+        <h4 class="descprodh4h3"> Todos os produtos que foram comprados aqui! obrigado pela confiança!</h4><br>
+
+        <div id="aprovado">
+
+        </div>
+
+        <h3 class="descprodh4h3"> Em Aprovação</h3>
+        <h4 class="descprodh4h3">hmm, aqui está os pedidos que ainda não foram aprovados</h4><br>
+
+        <div id="aprovacao">
+
+        </div>
+
+        <h3 class="descprodh4h3"> Recusados</h3>
+        <h4 class="descprodh4h3"> Aqui está todos os pedidos recusados</h4><br>
+
+        <div id="recusado">
+
+        </div>
+    </div>
+
+    <div id="divimgfinal">
+        <img src="../images/features/gifconta.gif" class="imgfinalpag" alt="logo ttams">
+    </div>
+
+    
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="../images/ttamsIcon.png" class="logo" alt="logo ttams"> 
+            <h3> <strong> <span class="textmark">Keep calm & Feel the Bass </span> </strong></h3>
+            <p> <strong> Telefone: </strong> +55 (11) 93082-0738 </p>
+
+            <div  class="follow">
+                <div class="icon">
+                    <a href="https://www.tiktok.com/@thunderbass14?_t=8WISJFp29rC&_r=1" target="_blank"><i class="fa-brands fa-tiktok" id="icone1"></i> </a>
+                    <a href="https://www.instagram.com/thunderbassfest/" target="_blank"> <i class="fa-brands fa-instagram" id="icone2"> </i> </a>
+                    <a href="https://www.youtube.com/channel/UCGWp1s2s_ETVpxKKTVEqvZw" target="_blank"><i class="fa-brands fa-youtube" id="icone3"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p> © Copyright @ 2022 By THUNDER BASS FEST ™</p>
+        </div>
+
+
+    </footer>
+
+    <script src="../javascripts/scriptconta.js"></script>
+    <script src="../javascripts/barraRolagem.js"></script>
+    <script type="module" src="../javascripts/produtospedidos.js"></script>
+    <script type="module" src="../javascripts/firebasePagConta.js"></script>
+
+</body>
+
+</html>
