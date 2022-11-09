@@ -86,3 +86,4 @@ async function carregaData(){
 }
 
 window.onload = carregaData;
+
