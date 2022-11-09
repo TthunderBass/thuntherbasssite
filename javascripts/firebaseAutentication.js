@@ -51,8 +51,6 @@ function login(){
 
     criadbUser(user.displayName);
 
-    window.location.href ="Index.html";
-
   }).catch((error) => {
 
     const errorCode = error.code;
